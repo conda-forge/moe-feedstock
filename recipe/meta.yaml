@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.10
+    - python >=3.6,<3.11
     - poetry
   run:
     - alembic >=1.4.2,<2.0.0
@@ -27,11 +27,12 @@ requirements:
     - mediafile >=0.6.0,<0.7.0
     - musicbrainzngs >=0.7.1,<0.8.0
     - pluggy >=0.13.1,<0.14.0
-    - python >=3.6,<3.10
+    - python >=3.6,<3.11
     - pyyaml >=5.3.1,<6.0.0
     - questionary >=1.9.0,<2.0.0
     - sqlalchemy >=1.4.15,<2.0.0
     - unidecode >=1.2.0,<2.0.0
+    - mccabe >=0.7.0,<0.8.0
 
 test:
   imports:
