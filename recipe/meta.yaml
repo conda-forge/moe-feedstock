@@ -33,7 +33,7 @@ requirements:
     - sqlalchemy >=1.4.15,<2.0.0
     - unidecode >=1.2.0,<2.0.0
     - mccabe >=0.7.0,<0.8.0
-    - rich>=12.5.1,<13.0.0
+    - rich >=12.5.1,<13.0.0
 
 test:
   imports:
