@@ -20,7 +20,8 @@ requirements:
   host:
     - pip
     - python >=3.6,<3.11
-    - poetry-core>=1.1.0a6
+    - poetry-core >=1.1.0a6
+    #Might be switched to regular poetry again in the future
   run:
     - alembic >=1.4.2,<2.0.0
     - dynaconf >=3.1.4,<4.0.0
