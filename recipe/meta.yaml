@@ -1,5 +1,5 @@
 {% set name = "moe" %}
-{% set version = "1.0.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Moe-{{ version }}.tar.gz
-  sha256: 97abfb09eb22f6a61543af01d467dfc2a5b3a2993ab6960e7427289ef835ece1
+  sha256: ac0f98c9f5760ac220e53092251f44ecc4d8a30176c26846f1c509df1186a6e0
 
 build:
   entry_points:
@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.11
+    - python >=3.9,<3.11
     - poetry-core >=1.1.0a6
     #Might be switched to regular poetry again in the future
   run:
@@ -28,7 +28,7 @@ requirements:
     - mediafile >=0.9.0,<0.10.0
     - musicbrainzngs >=0.7.1,<0.8.0
     - pluggy >=0.13.1,<0.14.0
-    - python >=3.6,<3.11
+    - python >=3.9,<3.11
     - pyyaml >=5.3.1,<6.0.0
     - questionary >=1.9.0,<2.0.0
     - rich >=12.5.1,<13.0.0
