@@ -1,5 +1,5 @@
 {% set name = "moe" %}
-{% set version = "1.2.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/moe-{{ version }}.tar.gz
-  sha256: ac0f98c9f5760ac220e53092251f44ecc4d8a30176c26846f1c509df1186a6e0
+  sha256: 843ead1566f6f03130fd801a2ffcbede0f235466ff9d68c4643969dd7f190f78
 
 build:
   entry_points:
