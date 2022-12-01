@@ -1,5 +1,5 @@
 {% set name = "moe" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/moe-{{ version }}.tar.gz
-  sha256: cb50217f1fa49dd717352e8abf157e8a7c28ca4de7ff7e6c2f135a8178d4b5f3
+  sha256: 843ead1566f6f03130fd801a2ffcbede0f235466ff9d68c4643969dd7f190f78
 
 build:
   entry_points:
@@ -25,7 +25,7 @@ requirements:
   run:
     - alembic >=1.4.2,<2.0.0
     - dynaconf >=3.1.4,<4.0.0
-    - mediafile >=0.9.0,<0.10.0
+    - moe_mediafile
     - musicbrainzngs >=0.7.1,<0.8.0
     - pluggy >=0.13.1,<0.14.0
     - python >=3.9,<3.11
