@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/moe-{{ version }}.tar.gz
-  sha256: 843ead1566f6f03130fd801a2ffcbede0f235466ff9d68c4643969dd7f190f78
+  sha256: cb50217f1fa49dd717352e8abf157e8a7c28ca4de7ff7e6c2f135a8178d4b5f3
 
 build:
   entry_points:
