@@ -20,21 +20,18 @@ requirements:
   host:
     - pip
     - python >=3.9,<3.12
-    - poetry-core >=1.1.0a6
-    #Might be switched to regular poetry again in the future
+    - poetry
   run:
-    - alembic >=1.4.2,<2.0.0
-    - dynaconf >=3.1.4,<4.0.0
-    - moe_mediafile >=0.10.1,<0.11.0
-    - musicbrainzngs >=0.7.1,<0.8.0
-    - pluggy >=0.13.1,<0.14.0
     - python >=3.9,<3.12
-    - pyyaml >=5.3.1,<6.0.0
-    - questionary >=1.9.0,<2.0.0
-    - rich >=12.5.1,<13.0.0
     - sqlalchemy >=1.4.15,<2.0.0
     - unidecode >=1.2.0,<2.0.0
-    - mccabe >=0.7.0,<0.8.0
+    - alembic >=1.4.2,<2.0.0
+    - dynaconf >=3.1.4,<4.0.0
+    - mediafile >=0.11.0,<0.12.0
+    - musicbrainzngs >=0.7.1,<0.8.0
+    - pluggy >=0.13.1,<0.14.0
+    - questionary >=1.9.0,<2.0.0
+    - rich >=12.5.1,<13.0.0
 
 test:
   imports:
