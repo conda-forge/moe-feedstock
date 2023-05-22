@@ -1,11 +1,11 @@
-About moe
-=========
+About moe-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/moe-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MoeMusic/Moe
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/moe-feedstock/blob/main/LICENSE.txt)
 
 Summary: The ultimate tool for managing your music library.
 
