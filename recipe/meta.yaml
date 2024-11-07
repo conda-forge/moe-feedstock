@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/moe-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/moe-{{ version }}.tar.gz
   sha256: 3c98f5fbca3d996b779e3c5d15391c621f4f17138f3dfebf419bb16d14cf0fe2
 
 build:
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.14
+    - python {{ python_min }}
     - poetry-core >=1.0
     - pip
   run:
-    - python >=3.9,<3.14
+    - python >={{ python_min }}
     - alembic >=1.4.2,<2.0.0
     - dynaconf >=3.1.4,<4.0.0
     - mediafile >=0.13.0,<0.14.0
@@ -42,6 +42,7 @@ test:
     - moe --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/MoeMusic/Moe
