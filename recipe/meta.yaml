@@ -1,5 +1,5 @@
 {% set name = "moe" %}
-{% set version = "2.1.4" %}
+{% set version = "2.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,19 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/moe-{{ version }}.tar.gz
-  sha256: 3c98f5fbca3d996b779e3c5d15391c621f4f17138f3dfebf419bb16d14cf0fe2
+  sha256: e929b10ae0d5abb8162674419658bd10e2d439fd630a74ed4f77ece8874b0b52
 
 build:
   entry_points:
     - moe = moe.cli:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.0
+    - poetry-core
     - pip
   run:
     - python >={{ python_min }}
